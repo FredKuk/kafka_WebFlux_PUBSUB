@@ -1,0 +1,19 @@
+server.port: 8080
+spring.main.allow-bean-definition-overriding: true
+spring:
+  kafka:
+    host: kafka-kafka-brokers.kafka:9092
+    topic: webfluxDemo
+    groupId: testGroupId
+    # consumer:
+    #   bootstrap-servers: kafka-kafka-brokers.kafka:9092
+    #   auto-offset-reset: earliest
+      # key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      # value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    # producer:
+    #   bootstrap-servers: kafka-kafka-brokers.kafka:9092
+    #   key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    #   value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+  # application:
+  #   name: kafka_exam
